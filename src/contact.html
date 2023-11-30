@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheets" href="css/styles.css">
     <title>Contact</title>
 </head>
+
 <body>
-    <header>
-        <h1>Moti Leggese</h1>
+    <header class="grid-container">
+        <h1 class="grid-item">Moti Leggese</h1>
+        <img src="images/avatar.jpg" alt="Moti Leggese Avatar" class="grid-item">
+        <img src="images/download.jpg" alt="Download Image" class="grid-item">
+        <nav class="grid-item">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Contact Form</h2>
-        <form action="#" method="post">
+    <section class="grid-container">
+        <h2 class="grid-item">Contact Form</h2>
+        <form action="#" method="post" class="grid-item">
             <label for="fullName">Full Name:</label>
             <input type="text" name="fullName" required>
 
@@ -41,35 +43,36 @@
         </form>
     </section>
 
-    <section>
-        <h2>Direct Contact</h2>
-        <p>
-            Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and collaborations.
+    <section class="grid-container">
+        <h2 class="grid-item">Direct Contact</h2>
+        <p class="grid-item">
+            Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and
+            collaborations.
         </p>
-        <address>
+        <address class="grid-item">
             <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
             <p>Phone: +251922426411</p>
         </address>
     </section>
 
     <!-- Address Section -->
-    <section>
-        <h2>Address</h2>
-        <p>
+    <section class="grid-container">
+        <h2 class="grid-item">Address</h2>
+        <p class="grid-item">
             If you prefer traditional mail or want to drop by, here's my address:
         </p>
-        <p>
+        <p class="grid-item">
             Ghana St., Addis Ababa, Ethiopia
         </p>
     </section>
 
     <!-- Social Media Section -->
-    <section>
-        <h2>Social Media</h2>
-        <p>
+    <section class="grid-container">
+        <h2 class="grid-item">Social Media</h2>
+        <p class="grid-item">
             Connect with me on social media for the latest updates and to stay in the loop:
         </p>
-        <ul>
+        <ul class="grid-item">
             <li><a href="https://t.me/motiition" target="_blank">Telegram</a></li>
             <img src="images/telegram.jpg" alt="Telegram Logo">
             <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">X</a></li>
@@ -77,8 +80,9 @@
         </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="grid-container">
+        <p class="grid-item">&copy; 2023 Moti Leggese</p>
     </footer>
 </body>
+
 </html>
