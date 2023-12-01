@@ -36,7 +36,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url('images/se_skills.jpg'); /* Change the image source */
+    background-image: url('../images/my_photo.jpg'); /* Change the image source */
     background-size: cover;
     background-position: center;
 }
@@ -104,8 +104,16 @@ nav .nav-link {
 }
 
 #my_photo {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     order: -1;
     align-self: flex-start;
+    position: absolute; */
+    
+    width: 100%;
+    /* height: em; */
+    /* border-radius: %; */
+    z-index: -1;
+    align-self: flex-start;
+    order: 1;
 }

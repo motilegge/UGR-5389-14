@@ -43,7 +43,7 @@ header {
 
 #avatar_image{
     position: absolute;
-    top: 10px;
+    
     width: 100%;
     /* height: em; */
     /* border-radius: %; */
@@ -60,13 +60,13 @@ header #welcome_text {
 }
 
 nav {
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 6em;
     justify-items: flex-start;
-    margin-top: -2em;
-    margin-left: 4em;
+    margin-top: -1em;
+    margin-left: 2em;
     order: 3;
     padding-left: 1em;
     text-decoration: none;
@@ -132,6 +132,9 @@ form input[type="submit"] {
     height: 100%;
     order: -1;
     align-self: flex-start;
+}
+nav .nav-link {
+    color: yellow;
 }
 
 #socialMedia img {
