@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/volunteer_activity.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Volunteer Activity</title>
-</head>
-<body>
-    <header>
-        <h1 id="my_skills">Volunteer Activity</h1>
-        <img src="images/avatar.jpg" alt="Avatar Image" id="avatar_image">
-        <img src="images/se_skills.jpg" alt="Skills Image" id="nav_background">
-        <nav>
-            <ul>
-                <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <header class="volunteer-page-header">
+        <img src="images/avatar.jpg" alt="Moti Leggese Avatar" class="flex-item" id="avatar_image" />
+        <h1 class="flex-item">Moti Leggese</h1>
+        <nav class="flex-item">
+          <ul>
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <main>
-        <section id="section-contribution" class="flex-item">
-            <h2>Contribution</h2>
-            <p>I actively contribute to positive change through hands-on projects and impactful events. My efforts are quantifiable, ranging from direct assistance to individuals and successful project implementation.</p>
-            <p>Whether raising funds for crucial causes or leading initiatives, my commitment is evident in tangible results. Each contribution reflects my dedication to fostering a supportive environment for those in need.</p>
-        </section>  
+      <main class="flex-container">
+        <contribution id="contribution" class="flex-item">
+          <h2>Contribution</h2>
+          <video src="videos/what_i_have_done.mp4" controls preload="metadata" ></video>
+                    <p class="grid-item">I actively contribute to positive change through hands-on projects and impactful
+                        events. My efforts are quantifiable, ranging from direct assistance to individuals and successful
+                        project implementation. Whether raising funds for crucial causes or leading initiatives, my commitment
+                        is evident in tangible results. Each contribution reflects my dedication to fostering a supportive
+                        environment for those in need.</p>
+        </contribution>
 
-        <section id="section-emotionalCare" class="flex-item">
-            <h2>Emotional Care</h2>
-            <p>Emotional care is a crucial aspect of our outreach efforts. It involves creating a supportive environment that acknowledges and addresses the emotional well-being of individuals facing challenging circumstances.</p>
-            <p>My approach focuses on offering empathy, understanding, and a comforting presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families I serve.</p>
-            <p>My goal is to contribute not only to their physical well-being but also to their emotional and mental health, recognizing the interconnected nature of overall wellness.</p>
-        </section>
+        <emotional-care id="emotionalCare" class="flex-item">
+          <h2>Emotional Care</h2>
+          <img src="images/Screenshot-2023-04-25-at-9.53.37-AM.png" alt="Emotional Care Image">
+                    <p class="grid-item">Emotional care is a crucial aspect of our outreach efforts. It involves creating a
+                        supportive environment that acknowledges and addresses the emotional well-being of individuals facing
+                        challenging circumstances. My approach focuses on offering empathy, understanding, and a comforting
+                        presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive
+                        to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families
+                        I serve. My goal is to contribute not only to their physical well-being but also to their emotional and
+                        mental health, recognizing the interconnected nature of overall wellness.</p>
+        </emotional-care>
 
-        <section id="section-experience" class="flex-item">
-            <h2>Experience</h2>
-            <p>I have worked to return households to financial self-sufficiency through enrollment in the formal banking system, basic income and small business grants, and support for additional skills or small business training.</p>
-            <p>I also serve families living in extreme poverty who also suffer from diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families restored to health and able to meet their economic needs without outside help.</p>
-        </section>
-    </main>
+        <experience id="experience" class="flex-item">
+          <h2>Experience</h2>
+          <img src="images/ph_24999_90586.jpg" alt="Experience Image">
+                    <p class="grid-item">I have worked to return households to financial self-sufficiency through enrollment
+                        in the formal banking system, basic income and small business grants, and support for additional skills
+                        or small business training. I also serve families living in extreme poverty who also suffer from
+                        diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families
+                        restored to health and able to meet their economic needs without outside help.</p>
+        </experience>
+      </main>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
-    </footer>
-</body>
+      <footer class="flex-container">
+        <p class="flex-item">&copy; 2023 Moti Leggese</p>
+      </footer>
+    </div>
+  </body>
 </html>
