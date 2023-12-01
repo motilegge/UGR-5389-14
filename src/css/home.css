@@ -1,5 +1,3 @@
-/* home.css */
-
 /* Resetting some styles */
 * {
     box-sizing: border-box;
@@ -65,11 +63,15 @@ nav {
     transform: translateX(-50%);
     width: 6em;
     justify-items: flex-start;
-    margin-top: -11em;
-    margin-left: 1em;
+    margin-top: -12em;
+    margin-left: 3em;
     order: 3;
-    padding-left: 3em;
+    padding-left: 1em;
     text-decoration: none;
+}
+
+nav .nav-link {
+    color: white;
 }
 
 /* Section styles */
@@ -96,12 +98,30 @@ section {
     align-self: flex-start;
 }
 
-#socialMedia img {
-    width: 3rem;
-    border-radius: 40%;
+/* Flex-item styles */
+.flex-item {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.flex-item h2 {
+    color: #fff;
+}
+
+.flex-item p {
+    color: #ccc;
+    line-height: 1.6;
 }
 
 /* Link color for all links */
 a {
     color: grey;
+}
+
+/* Link color for navigation links */
+nav .nav-link {
+    color:yellow;
 }
