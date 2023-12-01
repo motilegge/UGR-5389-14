@@ -4,95 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
     <title>Welcome to Moti Leggese's Website</title>
 </head>
 
 <body>
-    <header class="flex-container">
-        <h1>Welcome to Moti Leggese's Website</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <img src="images/home.jpg" alt="Homepage Background">
-        <nav class="flex-item">
-            <ul>
-                <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="flex-container">
+        <header>
+            <img src="images/avatar.jpg" alt="Moti Leggese Avatar" id="avatar_image">
+            <h1 id="welcome_text">Welcome to Moti Leggese's Website</h1>
+            <img src="images/home.jpg" alt="Homepage Background" id="nav_background">
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section class="flex-container">
-        <h2 class="flex-item">About Me</h2>
-        <img src="images/about.jpg" alt="About Me Image" class="flex-item">
-        <p class="flex-item">
-            Welcome! I'm Moti Leggese, a passionate third-year software engineering student. Explore my website to learn more
-            about my skills, projects, and contributions.
-        </p>
-    </section>
+        <section>
+            <h2>About Me</h2>
+            <img src="images/about.jpg" alt="About Me Image">
+            <p>
+                Welcome! I'm Moti Leggese, a passionate third-year software engineering student. Explore my website to
+                learn more about my skills, projects, and contributions.
+            </p>
+        </section>
 
-    <section class="flex-container">
-        <h2 class="flex-item">Featured Projects</h2>
-        <img src="images/featured.jpg" alt="Featured Projects" class="flex-item">
-        <p class="flex-item">
-            Check out some of my latest projects, showcasing my expertise in software development. Each project reflects
-            my commitment to innovation and excellence.
-        </p>
-        <a href="https://github.com/motilegge/UGR-5389-14.git" target="_blank" class="flex-item">Check my Projects on
-            GitHub</a>
-    </section>
+        <section>
+            <h2>Featured Projects</h2>
+            <img src="images/featured.jpg" alt="Featured Projects">
+            <p>
+                Check out some of my latest projects, showcasing my expertise in software development. Each project
+                reflects my commitment to innovation and excellence.
+            </p>
+            <a href="https://github.com/motilegge/UGR-5389-14.git" target="_blank" class="flex-item">Check my Projects on
+                GitHub</a>
+        </section>
 
-    <section class="flex-container">
-        <h2 class="flex-item">Skills and Expertise</h2>
-        <img src="images/core_skills.jpg" alt="Core Skills" class="flex-item">
-        <p class="flex-item">
-            Explore my skills and expertise in software engineering. From web development to database management, I bring a
-            diverse set of capabilities to the table. Check out my projects and see how I apply my skills to real-world
-            challenges.
-        </p>
-        <p class="flex-item">
-            Visit my <a href="skills.html" class="nav-link">Skills page</a> for a detailed breakdown of the technologies
-            and tools I work with.
-        </p>
-    </section>
-
-    <section class="flex-container">
-        <h2 class="flex-item">Volunteer Activity and Contributions</h2>
-        <p class="flex-item">Discover my commitment to making a positive impact beyond the world of software. In the <a
-                href="volunteer_activity.html" class="nav-link">Volunteer Activity</a> section, I share experiences in
-            contributing to positive change through hands-on projects and events.</p>
-        <p class="flex-item">Learn about my efforts in providing emotional care and making meaningful contributions to
-            communities in need. Read about specific projects and initiatives that reflect my dedication to social
-            responsibility.</p>
-    </section>
-
-    <section class="flex-container">
-        <h2 class="flex-item">Project Pulse</h2>
-        <p class="flex-item">Stay updated with my latest news and announcements. Whether it's a new project,
-            collaboration, or an exciting development in the tech world, you'll find it here.</p>
-        <ul class="flex-item">
-            <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank" class="nav-link">Exciting
-                    News on X Platform</a></li>
-            <li><a href="https://t.me/motiition" target="_blank" class="nav-link">Join me on Telegram for Live
-                    Updates</a></li>
-        </ul>
-    </section>
-
-    <section class="flex-container">
-        <h2 class="flex-item">Get in Touch</h2>
-        <p class="flex-item">Interested in collaborating or learning more about my work? Feel free to reach out! Visit
-            the <a href="contact.html" class="nav-link">Contact page</a> for direct contact information, my address, and
-            social media links.</p>
-        <p class="flex-item">Whether you have a project in mind or just want to connect, I'm always open to new
-            opportunities and collaborations.</p>
-        <a href="contact.html" class="nav-link flex-item">Contact Me</a>
-    </section>
-
-    <footer class="flex-container">
-        <p class="flex-item">&copy; 2023 Moti Leggese</p>
-    </footer>
+        <section>
+            <h2>Skills and Expertise</h2>
+            <img src="images/core_skills.jpg" alt="Core Skills">
+            <p>
+                Explore my <a href="skills.html">skills</a> and expertise in software engineering. From web development to database management, I
+                bring a diverse set of capabilities to the table. Check out my projects and see how I apply my skills to
+                real-world challenges.
+            </p>
+            <p>
+                Visit my <a href="skills.html" class="nav-link">Skills page</a> for a detailed breakdown of the
+                technologies and tools I work with.
+            </p>
+        </section>
+        <footer class="footer">
+            <p id="footer note">&copy; 2023 Moti Leggese</p>
+        </footer>
+    </div>
 </body>
 
 </html>
