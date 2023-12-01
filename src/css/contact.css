@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to left bottom, #000428, #001c3d, #003451, #005065, #004e92);
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    background-image: url('images/home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav.grid-item {
+    justify-self: center;
+    margin-top: -9em;
+}
+
+nav .nav-link {
+    color: white;
+}
+
+section {
+    width: 100%;
+    max-width: 100vw;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    width: fit-content;
+    height: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+a {
+    color: grey;
+}
+.grid-item {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.grid-item h2 {
+    color: #fff;
+}
+
+.grid-item p {
+    color: #ccc;
+    line-height: 1.6;
+    height: 5em;
+    width: 5em;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    height: 3rem;
+    
+    justify-content: center;
+    margin-bottom: rem;
+}
+
+#nav_background {
+    width: 100vw;
+    height: 100%;
+    order: -1;
+    align-self: flex-start;
+}
+
+nav .nav-link {
+    color: yellow;
+}
+
+
+#socialMedia img {
+    width: 3rem;
+    border-radius: 40%;
+}
+#avatar_image {
+    width: 7rem;
+    height: 7em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-left: -1em;
+}
+.grid-item img{
+    border-radius: 40%;
+    height: 3em;
+    width: 3em;
+}

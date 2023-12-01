@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to left bottom, #000428, #001c3d, #003451, #005065, #004e92);
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    background-image: url('images/se_skills.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#avatar_image {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-top: -20em;
+    margin-left: -1em;
+}
+section#contribution.grid-item{
+    margin-top: -7em;
+}
+
+#my_skills {
+    color: rgb(255, 255, 255);
+    margin-top: -9em;
+    order: 1;
+    margin-left: 1em;
+}
+
+nav {
+    justify-self: center;
+    margin-top: -1em;
+}
+
+nav .nav-link {
+    color: yellow;
+}
+
+nav.grid-item {
+    justify-self: center;
+    margin-top: -30em;
+}
+
+section {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.footer {
+    display: grid;
+    width: fit-content;
+    height: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+#nav_background {
+    width: 100vw;
+    height: 100%;
+    order: -1;
+    align-self: flex-start;
+}
+
+.grid-item {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1.grid-item {
+    margin-top: -18em;
+    color: #000428;
+}
+
+.grid-item h2 {
+    color: #fff;
+}
+
+.grid-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.grid-item img,
+.grid-item video {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
