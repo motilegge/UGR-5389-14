@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home.css">
-    <title>Welcome to Moti Leggese's Website</title>
-</head>
-
-<body>
+  <body>
     <div class="grid-container">
-        <header>
-            <img src="images/avatar.jpg" alt="Moti Leggese Avatar" id="avatar_image">
-            <h1 id="welcome_text">Welcome to Moti Leggese's Website</h1>
-            <img src="images/home.jpg" alt="Homepage Background" id="nav_background">
-            <nav>
-                <ul>
-                    <li><a href="home.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
-                    <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <h2>About Me</h2>
-            <img src="images/about.jpg" alt="About Me Image">
-            <p>
-                Welcome! I'm Moti Leggese, a passionate third-year software engineering student. Explore my website to
-                learn more about my skills, projects, and contributions.
-            </p>
-        </section>
-
-        <section>
-            <h2>Featured Projects</h2>
-            <img src="images/featured.jpg" alt="Featured Projects">
-            <p>
-                Check out some of my latest projects, showcasing my expertise in software development. Each project
-                reflects my commitment to innovation and excellence.
-            </p>
-            <a href="https://github.com/motilegge/UGR-5389-14.git" target="_blank" class="grid-item">Check my Projects on
-                GitHub</a>
-        </section>
-
-        <section>
-            <h2>Skills and Expertise</h2>
-            <img src="images/core_skills.jpg" alt="Core Skills">
-            <p>
-                Explore my <a href="skills.html">skills</a> and expertise in software engineering. From web development to database management, I
-                bring a diverse set of capabilities to the table. Check out my projects and see how I apply my skills to
-                real-world challenges.
-            </p>
-            <p>
-                Visit my <a href="skills.html" class="nav-link">Skills page</a> for a detailed breakdown of the
-                technologies and tools I work with.
-            </p>
-        </section>
+      <header class="home-page-header">
+        <img
+          src="images/avatar.jpg"
+          alt="Moti Leggese Avatar"
+          id="avatar_image"
+        />
+        <h1 class="welcome-text">Welcome to Moti Leggese's Website</h1>
         
-    </div>
-</body>
-<footer class="footer">
-    <p id="footer note">&copy; 2023 Moti Leggese</p>
-</footer>
+        <nav>
+          <ul>
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li>
+              <a href="volunteer_activity.html" class="nav-link"
+                >Volunteer Activity</a
+              >
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <about-me>
+        <h2>About Me</h2>
+        <img src="images/about.jpg" alt="About Me Image" />
+        <p>
+          Welcome! I'm Moti Leggese, a passionate third-year software
+          engineering student. Explore my website to learn more about my skills,
+          projects, and contributions.
+        </p>
+      </about-me>
+
+      <featured-projects>
+        <h2>Featured Projects</h2>
+        <img src="images/featured.jpg" alt="Featured Projects" />
+        <p>
+          Check out some of my latest projects, showcasing my expertise in
+          software development. Each project reflects my commitment to
+          innovation and excellence.
+        </p>
+        <a
+          href="https://github.com/motilegge/UGR-5389-14.git"
+          target="_blank"
+          class="grid-item link"
+          >Check my Projects on GitHub</a
+        >
+      </featured-projects>
+
+      <skills-and-expertice>
+        <h2>Skills and Expertise</h2>
+        <img src="images/core_skills.jpg" alt="Core Skills" />
+        <p>
+          Explore my <a href="skills.html" class="link">skills</a> and expertise
+          in software engineering. From web development to database management,
+          I bring a diverse set of capabilities to the table. Check out my
+          projects and see how I apply my skills to real-world challenges.
+        </p>
+        <p>
+          Visit my <a href="skills.html" class="link">Skills page</a> for a
+          detailed breakdown of the technologies and tools I work with.
+        </p>
+      </skills-and-expertice>
+    </div>
+  </body>
+  <footer class="footer">
+    <p id="footer note">&copy; 2023 Moti Leggese</p>
+  </footer>
 </html>

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>About Me</title>
 </head>
 
 <body>
-    <div class="grid-container">
-        <header>
+    <div class="grid-container">    
+        <header class="about-page-header">
             <img src="images/avatar.jpg" alt="Moti Leggese Avatar" id="avatar_image">
             
             <nav>
@@ -24,22 +24,24 @@
             </nav>
         </header>
 
-        <section id="section-introduction" class="grid-item">
-            <h2>Introduction</h2>
-            <p>
-                Welcome to my digital space! I'm Moti Leggese, a passionate third-year software engineering student on a journey to explore the vast world of technology.
-            </p>
-        </section>
-
-        <section id="section-background" class="grid-item">
-            <h2>Background</h2>
-            <p>
-                My educational journey began at Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. After successfully completing my high school education, I embarked on my current path of pursuing a degree in software engineering.
-            </p>
-            <p>
-                These years of academic exploration laid the foundation for my passion for learning and set the stage for my continued journey in the field of software engineering.
-            </p>
-        </section>
+        <main class="grid-container">
+            <introduction  class="grid-item">
+                <h2>Introduction</h2>
+                <p>
+                    Welcome to my digital space! I'm Moti Leggese, a passionate third-year software engineering student on a journey to explore the vast world of technology.
+                </p>
+            </introduction>
+    
+            <background id="section-background" class="grid-item">
+                <h2>Background</h2>
+                <p>
+                    My educational journey began at Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. After successfully completing my high school education, I embarked on my current path of pursuing a degree in software engineering.
+                </p>
+                <p>
+                    These years of academic exploration laid the foundation for my passion for learning and set the stage for my continued journey in the field of software engineering.
+                </p>
+            </background>
+        </main>
 
         <footer>
             <p>&copy; 2023 Moti Leggese</p>
