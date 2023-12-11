@@ -48,7 +48,39 @@ header {
     max-height: 100%;
 }
 
-#avatar_image {
+.home-page-header__avatar{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-top: -1em;
+    margin-left: -1em;
+}
+.contact-page-header__avatar{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-top: -1em;
+    margin-left: -1em;
+}
+.skills-page-header__avatar{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-top: -1em;
+    margin-left: -1em;
+}
+.about-page-header__avatar{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    justify-self: start;
+    margin-top: -1em;
+    margin-left: -1em;
+}
+.volunteer-page-header__avatar{
     width: 5em;
     height: 5em;
     border-radius: 50%;
@@ -61,6 +93,8 @@ header {
     background-image:url(../images/my_photo.jpg);
     margin-top: 2em;
     background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .home-page-header{
     margin-top: 2em;
@@ -91,9 +125,33 @@ nav .nav-link {
     color: rgb(252, 204, 62);
     margin: 0 10px;
 }
+nav .navlink:hover{
+    color: orange;
+}
 .link{
     color: yellow;
 } 
+/* Existing styles above this point */
+
+nav .nav-link {
+    color: rgb(252, 204, 62);
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav .nav-link:hover {
+    color: orange;
+}
+
+.link {
+    color: yellow;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: orange;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -148,9 +206,538 @@ form input[type="submit"] {
 a{
     color: yellow;
 }
-.logo{
+.social-media__logo{
     border-radius: 40%;
     max-width:20% ;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    /*  styles for mobile landscape here */
+   *{
+    font-size: 16px;
+   }
+   .grid-container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: auto;
+   }
+   .home-page-header{
+    grid-column: 1/-1;
+   }
+   .about-page-header{
+    grid-column: 1/-1;
+   }
+   .skills-page-header{
+    grid-column: 1/-1;
+   }
+    .about-me{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .about-me__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .about-me__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contribution{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .contribution__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contribution__video{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }.emotional-care{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .emotional-care__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .emotional-care__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }.experience{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .experience__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .experience__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .featured-projects{
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: auto;
+    }
+    .featured-projects__text{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .featured-projects__image{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .skills-and-expertise{
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: auto;
+    }
+    .skills-and-expertise__text{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .skills-and-expertise__image{
+        grid-column: 1/2;
+        grid-row: 4/5;
+   }
+   .contact-page-header{
+    grid-row: 1/-1;
+   }
+   .about-me{
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr;
+    grid-row: auto;
+    grid-column: 1/-1;
+}
+.about-me__text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.about-me__image{
+    grid-column: 1/2;
+    grid-row: 2/3;   
+
+.footer__note{
+    display: flex;
+    justify-self: center;
+    grid-row: 2;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px; /* Adjust the padding as needed */
+    bottom: 0;
+    width: 100%;
+}
+    
+}
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+}
+.introduction.grid-item{
+    grid-column: 1/-1;
+}
+.background.grid-item{
+    grid-column: 1/-1;
+}
+.list-of-skills__table{
+    grid-column: 1/-1;
+}
+.applications{
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr;
+    grid-row: auto;
+    grid-column: 1/-1;
+}
+.applications__text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.applications__image{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.direct-contact{
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr;
+    grid-row: auto;
+    grid-column: 1/-1;
+    
+}
+.applications__text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.applications__image{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    /*  styles for tablet here */
+    *{
+        font-size: 16px;
+       }
+       .grid-container{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-rows: auto;
+       }
+       .home-page-header{
+        grid-column: 1/-1;
+       }
+       .about-page-header{
+        grid-column: 1/-1;
+       }
+       .skills-page-header{
+        grid-column: 1/-1;
+       }
+        .about-me{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .about-me__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .about-me__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .contribution{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .contribution__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .contribution__video{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }.emotional-care{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .emotional-care__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .emotional-care__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }.experience{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .experience__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .experience__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .featured-projects{
+            display: grid;
+            grid-column: 1/-1;
+            grid-row: auto;
+        }
+        .featured-projects__text{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .featured-projects__image{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .skills-and-expertise{
+            display: grid;
+            grid-column: 1/-1;
+            grid-row: auto;
+        }
+        .skills-and-expertise__text{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .skills-and-expertise__image{
+            grid-column: 1/2;
+            grid-row: 4/5;
+       }
+       .contact-page-header{
+        grid-row: 1/-1;
+       }
+       .about-me{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .about-me__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .about-me__image{
+        grid-column: 1/2;
+        grid-row: 2/3;   
+    
+    .footer__note{
+        display: flex;
+        justify-self: center;
+        grid-row: 2;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px; /* Adjust the padding as needed */
+        bottom: 0;
+        width: 100%;
+    }
+        
+    }
+    .introduction{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: auto;
+    }
+    .introduction.grid-item{
+        grid-column: 1/-1;
+    }
+    .background.grid-item{
+        grid-column: 1/-1;
+    }
+    .list-of-skills__table{
+        grid-column: 1/-1;
+    }
+    .applications{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .applications__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .applications__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .direct-contact{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+        
+    }
+    .applications__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .applications__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+@media only screen and (min-width: 1280px){
+    /*  styles for desktop here */
+    *{
+        font-size: 20px;
+       }
+       .grid-container{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-rows: auto;
+       }
+       .home-page-header{
+        grid-column: 1/-1;
+       }
+       .about-page-header{
+        grid-column: 1/-1;
+       }
+       .skills-page-header{
+        grid-column: 1/-1;
+       }
+        .about-me{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .about-me__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .about-me__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .contribution{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .contribution__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .contribution__video{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }.emotional-care{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .emotional-care__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .emotional-care__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }.experience{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr,1fr;
+            grid-row: auto;
+            grid-column: 1/-1;
+        }
+        .experience__text{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .experience__image{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .featured-projects{
+            display: grid;
+            grid-column: 1/-1;
+            grid-row: auto;
+        }
+        .featured-projects__text{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .featured-projects__image{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .skills-and-expertise{
+            display: grid;
+            grid-column: 1/-1;
+            grid-row: auto;
+        }
+        .skills-and-expertise__text{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .skills-and-expertise__image{
+            grid-column: 1/2;
+            grid-row: 4/5;
+       }
+       .contact-page-header{
+        grid-row: 1/-1;
+       }
+       .about-me{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .about-me__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .about-me__image{
+        grid-column: 1/2;
+        grid-row: 2/3;   
+    
+    .footer__note{
+        display: flex;
+        justify-self: center;
+        grid-row: 2;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px; /* Adjust the padding as needed */
+        bottom: 0;
+        width: 100%;
+    }
+        
+    }
+    .introduction{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: auto;
+    }
+    .introduction.grid-item{
+        grid-column: 1/-1;
+    }
+    .background.grid-item{
+        grid-column: 1/-1;
+    }
+    .list-of-skills__table{
+        grid-column: 1/-1;
+    }
+    .applications{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+    .applications__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .applications__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .direct-contact{
+        display: grid;
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        grid-row: auto;
+        grid-column: 1/-1;
+        
+    }
+    .applications__text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .applications__image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+}}}

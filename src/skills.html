@@ -1,114 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Skills</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="grid-container">
-      <header class="skills-page-header">
-        <img src="images/avatar.jpg" alt="Avatar Image" class="grid-item" id="avatar_image">
-        <h1 class="grid-item">Main Heading</h1>
+        <header class="skills-page-header">
+            <img src="images/avatar.jpg" alt="Avatar Image" class="skills-page-header__avatar" id="avatar_image">
+            <h1 class="skills-page-header__main-heading">Main Heading</h1>
 
-        <nav class="grid-item">
-          <ul>
-            <li><a href="home.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="skills.html" class="nav-link">Skills</a></li>
-            <li>
-              <a href="volunteer_activity.html" class="nav-link"
-                >Volunteer Activity</a
-              >
-            </li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="grid-container">
-        <applications id="applications" class="grid-item">
-          <h2 class="grid-item">Applications</h2>
-          <img
-            src="images/skills.jpg"
-            alt="Skills Showcase Image"
-            class="grid-item"
-          />
-          <p class="grid-item">
-            Welcome to my skills showcase! As a third-year software engineering
-            student, I've cultivated a diverse set of skills to bring creative and
-            efficient solutions to the table. Below, you'll find a snapshot of my
-            expertise across various domains in the field. From web development to
-            database management, programming proficiency, mobile app development,
-            version control, Agile methodology, and cybersecurity measures, each
-            skill reflects my commitment to excellence and innovation.
-          </p>
-        </applications>
-  
-        <list-of-skills id="section2" class="grid-item">
-          <h2>List of Skills</h2>
-          <table class="grid-item">
-            <tr>
-              <th>Applications I've Developed</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Web Development</td>
-              <td>
-                Created responsive websites with HTML, CSS, and JavaScript.
-                Developed dynamic web apps using React.js.
-              </td>
-            </tr>
-            <tr>
-              <td>Database Management</td>
-              <td>
-                Designed robust databases with SQL, ensuring efficient data
-                storage and retrieval.
-              </td>
-            </tr>
-            <tr>
-              <td>Programming Proficiency</td>
-              <td>
-                Utilized Python and Java for versatile applications, focusing on
-                automation and efficiency.
-              </td>
-            </tr>
-            <tr>
-              <td>Mobile App Development</td>
-              <td>
-                Crafted mobile apps for Android and iOS using React Native,
-                integrating push notifications and offline capabilities.
-              </td>
-            </tr>
-            <tr>
-              <td>Version Control</td>
-              <td>
-                Managed collaborative projects with Git and GitHub, demonstrating
-                expertise in branch management and conflict resolution.
-              </td>
-            </tr>
-            <tr>
-              <td>Agile Methodology</td>
-              <td>
-                Applied Agile principles in project development, contributing to
-                effective sprint planning and progress reviews.
-              </td>
-            </tr>
-            <tr>
-              <td>Cybersecurity Measures</td>
-              <td>
-                Implemented security measures, including encryption and
-                authentication, and conducted assessments for enhanced resilience.
-              </td>
-            </tr>
-          </table>
-        </list-of-skills>
-  
-      </main>
-      <footer class="grid-container">
-        <p class="grid-item">&copy; 2023 Moti Leggese</p>
-      </footer>
+            <nav class="skills-page-header__nav">
+                <ul class="skills-page-header__nav-list">
+                    <li><a href="home.html" class="skills-page-header__nav-link">Home</a></li>
+                    <li><a href="about.html" class="skills-page-header__nav-link">About</a></li>
+                    <li><a href="skills.html" class="skills-page-header__nav-link">Skills</a></li>
+                    <li><a href="volunteer_activity.html" class="skills-page-header__nav-link">Volunteer Activity</a></li>
+                    <li><a href="contact.html" class="skills-page-header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid-container">
+            <applications id="applications" class="applications">
+                <h2 class="applications__heading">Applications</h2>
+                <img src="images/skills.jpg" alt="Skills Showcase Image" class="applications__image" />
+                <p class="applications__text">
+                    Welcome to my skills showcase! As a third-year software engineering student, I've cultivated a diverse set
+                    of skills to bring creative and efficient solutions to the table. Below, you'll find a snapshot of my
+                    expertise across various domains in the field. From web development to database management, programming
+                    proficiency, mobile app development, version control, Agile methodology, and cybersecurity measures, each
+                    skill reflects my commitment to excellence and innovation.
+                </p>
+            </applications>
+
+            <list-of-skills id="section2" class="list-of-skills">
+                <h2 class="list-of-skills__heading">List of Skills</h2>
+                <table class="list-of-skills__table">
+                    <tr>
+                        <th>Applications I've Developed</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>
+                            Created responsive websites with HTML, CSS, and JavaScript. Developed dynamic web apps using
+                            React.js.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>
+                            Designed robust databases with SQL, ensuring efficient data storage and retrieval.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming Proficiency</td>
+                        <td>
+                            Utilized Python and Java for versatile applications, focusing on automation and efficiency.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile App Development</td>
+                        <td>
+                            Crafted mobile apps for Android and iOS using React Native, integrating push notifications
+                            and offline capabilities.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Version Control</td>
+                        <td>
+                            Managed collaborative projects with Git and GitHub, demonstrating expertise in branch
+                            management and conflict resolution.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agile Methodology</td>
+                        <td>
+                            Applied Agile principles in project development, contributing to effective sprint planning and
+                            progress reviews.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cybersecurity Measures</td>
+                        <td>
+                            Implemented security measures, including encryption and authentication, and conducted
+                            assessments for enhanced resilience.
+                        </td>
+                    </tr>
+                </table>
+            </list-of-skills>
+        </main>
+        <footer class="footer">
+            <p class="footer__note">&copy; 2023 Moti Leggese</p>
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>

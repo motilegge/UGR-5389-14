@@ -12,79 +12,79 @@
     <div class="grid-container">
         <header class="contact-page-header">
             <h1>Moti Leggese</h1>
-            <img src="images/avatar.jpg" alt="Moti Leggese Avatar" class="grid-item" id="avatar_image">
+            <img src="images/avatar.jpg" alt="Moti Leggese Avatar" class="contact-page-header__avatar" id="avatar_image">
            
-            <nav class="grid-item">
-                <ul>
-                    <li><a href="home.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
-                    <li><a href="volunteer_activity.html" class="nav-link">Volunteer Activity</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <nav class="contact-page-header__nav">
+                <ul class="contact-page-header__nav-list">
+                    <li><a href="home.html" class="contact-page-header__nav-link">Home</a></li>
+                    <li><a href="about.html" class="contact-page-header__nav-link">About</a></li>
+                    <li><a href="skills.html" class="contact-page-header__nav-link">Skills</a></li>
+                    <li><a href="volunteer_activity.html" class="contact-page-header__nav-link">Volunteer Activity</a></li>
+                    <li><a href="contact.html" class="contact-page-header__nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="grid-container">
-            <contact-form class="grid-item">
-                <h2>Contact Form</h2>
-                <form action="#" method="post" class="grid-item">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" name="fullName" required>
+            <contact-form class="contact-form">
+                <h2 class="contact-form__heading">Contact Form</h2>
+                <form action="#" method="post" class="contact-form__form">
+                    <label for="fullName" class="contact-form__label">Full Name:</label>
+                    <input type="text" name="fullName" class="contact-form__input" required>
         
-                    <label for="address">Address:</label>
-                    <textarea name="address" rows="3" required></textarea>
+                    <label for="address" class="contact-form__label">Address:</label>
+                    <textarea name="address" rows="3" class="contact-form__textarea" required></textarea>
         
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" name="phoneNumber" required>
+                    <label for="phoneNumber" class="contact-form__label">Phone Number:</label>
+                    <input type="tel" name="phoneNumber" class="contact-form__input" required>
         
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" required>
+                    <label for="email" class="contact-form__label">Email:</label>
+                    <input type="email" name="email" class="contact-form__input" required>
         
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="contact-form__submit">
                 </form>
             </contact-form  >
         
-            <direct-contact class="grid-item">
-                <h2 class="grid-item">Direct Contact</h2>
-                <p class="grid-item">
+            <direct-contact class="direct-contact">
+                <h2 class="direct-contact__heading">Direct Contact</h2>
+                <p class="direct-contact__text">
                     Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and
                     collaborations.
                 </p>
-                <my-address class="grid-item">
-                    <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
+                <my-address class="direct-contact__address">
+                    <p>Email: <a href="mailto:motileggese@gmail.com" class="direct-contact__email">motileggese@gmail.com</a></p>
                     <p>Phone: +251922426411</p>
                 </my-address>
             </direct-contact>
         
             <!-- Address Section -->
-            <address class="grid-item">
-                <h2 >Address</h2>
-                <p>
+            <address class="address">
+                <h2 class="address__heading">Address</h2>
+                <p class="address__text">
                     If you prefer traditional mail or want to drop by, here's my address:
                 </p>
-                <p class="grid-item">
+                <p class="address__detail">
                     Ghana St., Addis Ababa, Ethiopia
                 </p>
             </address>
         
             <!-- Social Media Section -->
-            <social-media class="grid-item">
-                <h2>Social Media</h2>
-                <p>
-                    Connect with me on social media for the latest updates and to stay in the loop:</p>
-                <ul class="grid-item">
-                    <li><a href="https://t.me/motiition" target="_blank">Telegram</a></li>
-                    <img src="images/telegram.jpg" alt="Telegram Logo"class="logo">
-                    <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">X</a></li>
-                    <img src="images/x.jpeg" alt="X Logo" class="logo">
+            <social-media class="social-media">
+                <h2 class="social-media__heading">Social Media</h2>
+                <p class="social-media__text">
+                    Connect with me on social media for the latest updates and to stay in the loop:
+                </p>
+                <ul class="social-media__list">
+                    <li><a href="https://t.me/motiition" target="_blank" class="social-media__link">Telegram</a></li>
+                    <img src="images/telegram.jpg" alt="Telegram Logo" class="social-media__logo">
+                    <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank" class="social-media__link">X</a></li>
+                    <img src="images/x.jpeg" alt="X Logo" class="social-media__logo">
                 </ul>
             </social-media>
         </main>
         
-    
         <footer class="footer">
-            <p class="grid-item">&copy; 2023 Moti Leggese</p>
+            <p class="footer__note">&copy; 2023 Moti Leggese</p>
         </footer>
     </div>
 </body>
