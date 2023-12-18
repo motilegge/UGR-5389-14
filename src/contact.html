@@ -1,83 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Moti Leggese</h1>
+        <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="home.html">
+                    <img src="images/avatar.jpg" alt="Avatar Image" width="28" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="volunteer_activity.html">Volunteer Activity</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Contact Form</h2>
-        <form action="#" method="post">
-            <label for="fullName">Full Name:</label>
-            <input type="text" name="fullName" required>
-
-            <label for="address">Address:</label>
-            <textarea name="address" rows="3" required></textarea>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" name="phoneNumber" required>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" required>
-
-            <input type="submit" value="Submit">
-        </form>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Moti Leggese</h1>
+        </div>
     </section>
 
-    <section>
-        <h2>Direct Contact</h2>
-        <p>
-            Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and collaborations.
-        </p>
-        <address>
-            <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
-            <p>Phone: +251922426411</p>
-        </address>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Contact Form</h2>
+            <form action="#" method="post">
+                <div class="field">
+                    <label class="label" for="fullName">Full Name:</label>
+                    <div class="control">
+                        <input class="input" type="text" name="fullName" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="address">Address:</label>
+                    <div class="control">
+                        <textarea class="textarea" name="address" rows="3" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="phoneNumber">Phone Number:</label>
+                    <div class="control">
+                        <input class="input" type="tel" name="phoneNumber" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="email">Email:</label>
+                    <div class="control">
+                        <input class="input" type="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="button is-warning" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Direct Contact</h2>
+            <p>
+                Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and collaborations.
+            </p>
+            <address>
+                <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
+                <p>Phone: +251922426411</p>
+            </address>
+        </div>
     </section>
 
     <!-- Address Section -->
-    <section>
-        <h2>Address</h2>
-        <p>
-            If you prefer traditional mail or want to drop by, here's my address:
-        </p>
-        <p>
-            Ghana St., Addis Ababa, Ethiopia
-        </p>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Address</h2>
+            <p>
+                If you prefer traditional mail or want to drop by, here's my address:
+            </p>
+            <p>
+                Ghana St., Addis Ababa, Ethiopia
+            </p>
+        </div>
     </section>
 
     <!-- Social Media Section -->
-    <section>
-        <h2>Social Media</h2>
-        <p>
-            Connect with me on social media for the latest updates and to stay in the loop:
-        </p>
-        <ul>
-            <li><a href="https://t.me/motiition" target="_blank">Telegram</a></li>
-            <img src="images/telegram.jpg" alt="Telegram Logo">
-            <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">X</a></li>
-            <img src="images/x.jpeg" alt="X Logo">
-        </ul>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Social Media</h2>
+            <p>
+                Connect with me on social media for the latest updates and to stay in the loop:
+            </p>
+            <ul class="is-flex is-justify-content-space-between">
+                <li class="is-inline-block">
+                    <a href="https://t.me/motiition" target="_blank">
+                        <img src="images/telegram.jpg" alt="Telegram Logo" style="max-width: 50px; max-height: 50px;">
+                    </a>
+                </li>
+                <li class="is-inline-block">
+                    <a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">
+                        <img src="images/x.jpeg" alt="X Logo" style="max-width: 50px; max-height: 50px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurger = document.querySelector('.navbar-burger');
+            const $navbarMenu = document.querySelector('.navbar-menu');
+
+            if ($navbarBurger && $navbarMenu) {
+                $navbarBurger.addEventListener('click', () => {
+                    $navbarBurger.classList.toggle('is-active');
+                    $navbarMenu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>

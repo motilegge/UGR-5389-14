@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Main Heading</h1>
-        <img src="images/avatar.jpg" alt="Avatar Image">
-        <img src="images/se_skills.jpg" alt="Skills Image">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="home.html">
+                    <img src="images/avatar.jpg" alt="Avatar Image" width="28" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="volunteer_activity.html">Volunteer Activity</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="section1">
-        <h2>Applications</h2>
-        <img src="images/skills.jpg" alt="Skills Showcase Image">
-        <p>        
-            Welcome to my skills showcase! As a third-year software engineering student, I've cultivated a diverse set of skills to bring creative and efficient solutions to the table. Below, you'll find a snapshot of my expertise across various domains in the field. From web development to database management, programming proficiency, mobile app development, version control, Agile methodology, and cybersecurity measures, each skill reflects my commitment to excellence and innovation.
-        </p>
+    <section id="section1" class="section">
+        <div class="container">
+            <h2 class="title">Applications</h2>
+            <figure class="image">
+                <img src="images/skills.jpg" alt="Skills Showcase Image">
+            </figure>
+            <p>
+                Welcome to my skills showcase! As a third-year software engineering student, I've cultivated a diverse set of skills to bring creative and efficient solutions to the table. Below, you'll find a snapshot of my expertise across various domains in the field. From web development to database management, programming proficiency, mobile app development, version control, Agile methodology, and cybersecurity measures, each skill reflects my commitment to excellence and innovation.
+            </p>
+        </div>
     </section>
 
-    <section id="section2">
-        <h2>List of Skills</h2>
-        <table>
-            <tr>
-              <th>Applications I've Developed</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Web Development</td>
-              <td>Created responsive websites with HTML, CSS, and JavaScript. Developed dynamic web apps using React.js.</td>
-            </tr>
-            <tr>
-              <td>Database Management</td>
-              <td>Designed robust databases with SQL, ensuring efficient data storage and retrieval.</td>
-            </tr>
-            <tr>
-              <td>Programming Proficiency</td>
-              <td>Utilized Python and Java for versatile applications, focusing on automation and efficiency.</td>
-            </tr>
-            <tr>
-              <td>Mobile App Development</td>
-              <td>Crafted mobile apps for Android and iOS using React Native, integrating push notifications and offline capabilities.</td>
-            </tr>
-            <tr>
-              <td>Version Control</td>
-              <td>Managed collaborative projects with Git and GitHub, demonstrating expertise in branch management and conflict resolution.</td>
-            </tr>
-            <tr>
-              <td>Agile Methodology</td>
-              <td>Applied Agile principles in project development, contributing to effective sprint planning and progress reviews.</td>
-            </tr>
-            <tr>
-              <td>Cybersecurity Measures</td>
-              <td>Implemented security measures, including encryption and authentication, and conducted assessments for enhanced resilience.</td>
-            </tr>
-        </table>
+    <section id="section2" class="section">
+        <div class="container">
+            <h2 class="title">List of Skills</h2>
+            <div class="table-container">
+                <table class="table is-striped is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Applications I've Developed</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Created responsive websites with HTML, CSS, and JavaScript. Developed dynamic web apps using React.js.</td>
+                        </tr>
+                        <tr>
+                            <td>Database Management</td>
+                            <td>Designed robust databases with SQL, ensuring efficient data storage and retrieval.</td>
+                        </tr>
+                        <tr>
+                            <td>Programming Proficiency</td>
+                            <td>Utilized Python and Java for versatile applications, focusing on automation and efficiency.</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile App Development</td>
+                            <td>Crafted mobile apps for Android and iOS using React Native, integrating push notifications and offline capabilities.</td>
+                        </tr>
+                        <tr>
+                            <td>Version Control</td>
+                            <td>Managed collaborative projects with Git and GitHub, demonstrating expertise in branch management and conflict resolution.</td>
+                        </tr>
+                        <tr>
+                            <td>Agile Methodology</td>
+                            <td>Applied Agile principles in project development, contributing to effective sprint planning and progress reviews.</td>
+                        </tr>
+                        <tr>
+                            <td>Cybersecurity Measures</td>
+                            <td>Implemented security measures, including encryption and authentication, and conducted assessments for enhanced resilience.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurger = document.querySelector('.navbar-burger');
+            const $navbarMenu = document.querySelector('.navbar-menu');
+
+            if ($navbarBurger && $navbarMenu) {
+                $navbarBurger.addEventListener('click', () => {
+                    $navbarBurger.classList.toggle('is-active');
+                    $navbarMenu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>

@@ -4,45 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Activity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
     <header>
-        <h1>Moti Leggese</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <img src="images/download.jpg" alt="Download Image">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="home.html">
+                    <img src="images/avatar.jpg" alt="Moti Leggese Avatar" width="28" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="home.html">Home</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="skills.html">Skills</a>
+                    <a class="navbar-item" href="volunteer_activity.html">Volunteer Activity</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="contribution">
-            <h2>Contribution</h2>
-            <video src="videos/what_i_have_done.mp4" controls></video>
-            <p>I actively contribute to positive change through hands-on projects and impactful events. My efforts are quantifiable, ranging from direct assistance to individuals and successful project implementation. Whether raising funds for crucial causes or leading initiatives, my commitment is evident in tangible results. Each contribution reflects my dedication to fostering a supportive environment for those in need.</p>
+        <section id="contribution" class="section">
+            <div class="container">
+                <h2 class="title">Contribution</h2>
+                <video src="videos/what i have done.mp4" controls style="width: 100%;"></video>
+                <p>I actively contribute to positive change through hands-on projects and impactful events. My efforts are quantifiable, ranging from direct assistance to individuals and successful project implementation. Whether raising funds for crucial causes or leading initiatives, my commitment is evident in tangible results. Each contribution reflects my dedication to fostering a supportive environment for those in need.</p>
+            </div>
         </section>  
 
-        <section id="emotionalCare">
-            <h2>Emotional Care</h2>
-            <img src="images/Screenshot-2023-04-25-at-9.53.37-AM.png" alt="Emotional Care Image">
-            <p>Emotional care is a crucial aspect of our outreach efforts. It involves creating a supportive environment that acknowledges and addresses the emotional well-being of individuals facing challenging circumstances. My approach focuses on offering empathy, understanding, and a comforting presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families I serve. My goal is to contribute not only to their physical well-being but also to their emotional and mental health, recognizing the interconnected nature of overall wellness.</p>
+        <section id="emotionalCare" class="section">
+            <div class="container">
+                <h2 class="title">Emotional Care</h2>
+                <div class="columns">
+                    <div class="column is-half">
+                        <img src="images/Screenshot-2023-04-25-at-9.53.37-AM.png" alt="Emotional Care Image">
+                    </div>
+                    <div class="column is-half">
+                        <p>Emotional care is a crucial aspect of our outreach efforts. It involves creating a supportive environment that acknowledges and addresses the emotional well-being of individuals facing challenging circumstances. My approach focuses on offering empathy, understanding, and a comforting presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families I serve. My goal is to contribute not only to their physical well-being but also to their emotional and mental health, recognizing the interconnected nature of overall wellness.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <img src="images/ph_24999_90586.jpg" alt="Experience Image">
-            <p>I have worked to return households to financial self-sufficiency through enrollment in the formal banking system, basic income and small business grants, and support for additional skills or small business training. I also serve families living in extreme poverty who also suffer from diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families restored to health and able to meet their economic needs without outside help.</p>
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="title">Experience</h2>
+                <div class="columns">
+                    <div class="column is-half">
+                        <p>I have worked to return households to financial self-sufficiency through enrollment in the formal banking system, basic income and small business grants, and support for additional skills or small business training. I also serve families living in extreme poverty who also suffer from diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families restored to health and able to meet their economic needs without outside help.</p>
+                    </div>
+                    <div class="column is-half">
+                        <img src="images/ph_24999_90586.jpg" alt="Experience Image">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurger = document.querySelector('.navbar-burger');
+            const $navbarMenu = document.querySelector('.navbar-menu');
+
+            if ($navbarBurger && $navbarMenu) {
+                $navbarBurger.addEventListener('click', () => {
+                    $navbarBurger.classList.toggle('is-active');
+                    $navbarMenu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
