@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.2/gsap.min.js"></script>
+
     <title>Home</title>
+    
   </head>
 
   <body>
@@ -32,7 +35,7 @@
         </nav>
       </header>
 
-      <about-me class="about-me">
+      <about-me class="about-me grid-item">
         <h2 class="about-me__heading">About Me</h2>
         <img src="images/about.jpg" alt="About Me Image" class="about-me__image" />
         <p class="about-me__text">
@@ -42,7 +45,7 @@
         </p>
       </about-me>
 
-      <featured-projects class="featured-projects">
+      <featured-projects class="featured-projects grid-item">
         <h2 class="featured-projects__heading">Featured Projects</h2>
         <img src="images/featured.jpg" alt="Featured Projects" class="featured-projects__image" />
         <p class="featured-projects__text">
@@ -58,7 +61,7 @@
         >
       </featured-projects>
 
-      <skills-and-expertise class="skills-and-expertise">
+      <skills-and-expertise class="skills-and-expertise grid-item">
         <h2 class="skills-and-expertise__heading">Skills and Expertise</h2>
         <img src="images/core_skills.jpg" alt="Core Skills" class="skills-and-expertise__image" />
         <p class="skills-and-expertise__text">
@@ -72,9 +75,13 @@
           detailed breakdown of the technologies and tools I work with.
         </p>
       </skills-and-expertise>
+      <footer class="footer">
+        <p id="footer-note">&copy; 2023 Moti Leggese</p>
+      </footer>
+      <script src="js/script.js"></script>
+      
     </div>
+    
   </body>
-  <footer class="footer">
-    <p id="footer-note">&copy; 2023 Moti Leggese</p>
-  </footer>
+  
 </html>
