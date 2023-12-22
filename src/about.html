@@ -1,45 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-bl from-blue-900 via-indigo-800 to-purple-600 text-white m-5">
     <header>
-        <h1>About Moti Leggese</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="relative inline-block text-left">
+            <a class="flex items-center" href="home.html">
+                <img class="w-7 h-7" src="images/avatar.jpg" alt="Avatar Image">
+            </a>
+            
+            <button id="burger" class="inline-flex justify-center items-center">
+                <!--burger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">About</a>
+                    <a href="skills.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Skills</a>
+                    <a href="volunteer_activity.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Volunteer Activity</a>
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Introduction</h2>
-        <img src="images/intro.jpg" alt="Moti Leggese">
-        <p>
-            Hello! I'm Moti Leggese, a third-year software engineering student on a journey to explore the vast world of technology. Welcome to my digital space, where I share my enthusiasm for coding and problem-solving.
-        </p>
+    <section class="flex justify-end">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">About Moti Leggese</h1>
+        </div>
     </section>
 
-    <section>
-        <h2>Background</h2>
-        <p>
-            My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022.
-            </p>
-            <img src="images/my_photo.jpg" alt="Moti Leggese">
-            <p> These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
-        </p>
+    <section class="flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold ml-4">Introduction</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/intro.jpg" alt="Moti Leggese">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Hello! I'm Moti Leggese, a third-year software engineering student on a journey to explore the vast world of technology. Welcome to my digital space, where I share my enthusiasm for coding and problem-solving.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <section class="flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Background</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/my_photo.jpg" alt="Moti Leggese">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022.
+                    </p>
+                    <p class="text-lg">
+                        These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="content text-center">
+        <div class="container mx-auto py-4">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>

@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Activity</title>
+    <link rel="stylesheet"  href="dist/output.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-bl from-blue-900 via-indigo-800 to-purple-600 text-white m-5">
     <header>
-        <h1>Moti Leggese</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <img src="images/download.jpg" alt="Download Image">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="relative inline-block text-left">
+            <a class="flex items-center" href="home.html">
+                <img class="w-7 h-7" src="images/avatar.jpg" alt="Avatar Image">
+            </a>
+            
+            <button id="burger" class="inline-flex justify-center items-center" >
+                <!--burger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-50">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">About</a>
+                    <a href="skills.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Skills</a>
+                    <a href="volunteer_activity.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Volunteer Activity</a>
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="contribution">
-            <h2>Contribution</h2>
-            <video src="videos/what_i_have_done.mp4" controls></video>
-            <p>I actively contribute to positive change through hands-on projects and impactful events. My efforts are quantifiable, ranging from direct assistance to individuals and successful project implementation. Whether raising funds for crucial causes or leading initiatives, my commitment is evident in tangible results. Each contribution reflects my dedication to fostering a supportive environment for those in need.</p>
-        </section>  
-
-        <section id="emotionalCare">
-            <h2>Emotional Care</h2>
-            <img src="images/Screenshot-2023-04-25-at-9.53.37-AM.png" alt="Emotional Care Image">
-            <p>Emotional care is a crucial aspect of our outreach efforts. It involves creating a supportive environment that acknowledges and addresses the emotional well-being of individuals facing challenging circumstances. My approach focuses on offering empathy, understanding, and a comforting presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families I serve. My goal is to contribute not only to their physical well-being but also to their emotional and mental health, recognizing the interconnected nature of overall wellness.</p>
+        <section id="contribution" class="section text-white m-3">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Contribution</h2>
+                <video src="videos/what i have done.mp4" controls class="w-full"></video>
+                <p class="text-lg">I actively contribute to positive change through hands-on projects and impactful events. My efforts are quantifiable, ranging from direct assistance to individuals and successful project implementation. Whether raising funds for crucial causes or leading initiatives, my commitment is evident in tangible results. Each contribution reflects my dedication to fostering a supportive environment for those in need.</p>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <img src="images/ph_24999_90586.jpg" alt="Experience Image">
-            <p>I have worked to return households to financial self-sufficiency through enrollment in the formal banking system, basic income and small business grants, and support for additional skills or small business training. I also serve families living in extreme poverty who also suffer from diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families restored to health and able to meet their economic needs without outside help.</p>
+        <section id="emotionalCare" class="section text-white m-3">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Emotional Care</h2>
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2">
+                        <img src="images/Screenshot-2023-04-25-at-9.53.37-AM.png" alt="Emotional Care Image" class="w-full">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <p>Emotional care is a crucial aspect of our outreach efforts. It involves creating a supportive environment that acknowledges and addresses the emotional well-being of individuals facing challenging circumstances. My approach focuses on offering empathy, understanding, and a comforting presence to those navigating difficult situations. Through tailored emotional care initiatives, I strive to uplift spirits, provide solace, and foster a sense of resilience among the individuals and families I serve. My goal is to contribute not only to their physical well-being but also to their emotional and mental health, recognizing the interconnected nature of overall wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section text-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Experience</h2>
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2">
+                        <p>I have worked to return households to financial self-sufficiency through enrollment in the formal banking system, basic income and small business grants, and support for additional skills or small business training. I also serve families living in extreme poverty who also suffer from diseases such as HIV/AIDS, cervical cancer, and tuberculosis. I want to see individuals and families restored to health and able to meet their economic needs without outside help.</p>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <img src="images/ph_24999_90586.jpg" alt="Experience Image" class="w-full">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="footer text-white">
+        <div class="content text-center">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
-</body>
+
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    
+
 </html>

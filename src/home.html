@@ -1,90 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet"  href="dist/output.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-bl from-blue-900 via-indigo-800 to-purple-600 text-white m-5">
     <header>
-        <h1>Welcome to Moti Leggese's Website</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <img src="images/home.jpg" alt="homepage Background">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="relative inline-block text-left">
+            <a class="flex items-center" href="home.html">
+                <img class="w-7 h-7" src="images/avatar.jpg" alt="Avatar Image">
+            </a>
+            
+            <button id="burger" class="inline-flex justify-center items-center">
+                <!--burger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">About</a>
+                    <a href="skills.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Skills</a>
+                    <a href="volunteer_activity.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Volunteer Activity</a>
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <img src="images/about.jpg" alt="About Me Image">
-        <p>
-            Welcome! I'm Moti Leggese, a passionate third-year software engineering student. Explore my website to learn more about my skills, projects, and contributions.
-        </p>
+    <section class="section">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">Welcome to Moti Leggese's Website</h1>
+        </div>
     </section>
 
-    <section>
-        <h2>Featured Projects</h2>
-        <img src="images/featured.jpg" alt="Featured projetcs">
-        <p>
-            Check out some of my latest projects, showcasing my expertise in software development. Each project reflects my commitment to innovation and excellence.
-        </p>
-        <a href="https://github.com/motilegge/UGR-5389-14.git" target="_blank">Check my Projects on GitHub</a>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/about.jpg" alt="About Me Image">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Welcome! I'm Moti Leggese, a passionate third-year software engineering student. Explore my website to learn more about my skills, projects, and contributions.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Skills and Expertise</h2>
-        <img src="images/core_skills.jpg" alt="core skill">
-        <p>
-            Explore my skills and expertise in software engineering. From web development to database management, I bring a diverse set of capabilities to the table. Check out my projects and see how I apply my skills to real-world challenges.
-        </p>
-        <p>
-            Visit my <a href="skills.html">Skills page</a> for a detailed breakdown of the technologies and tools I work with.
-        </p>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Featured Projects</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/featured.jpg" alt="Featured Projects">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Check out some of my latest projects, showcasing my expertise in software development. Each project reflects my commitment to innovation and excellence.
+                    </p>
+                    <a href="https://github.com/motilegge/UGR-5389-14.git" target="_blank" class="text-yellow-500">Check my Projects on GitHub</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Volunteer Activity and Contributions</h2>
-        <img src="images/volunteer.jpg" alt="volunteer_activity">
-        <p>
-            Discover my commitment to making a positive impact beyond the world of software. In the <a href="volunteer_activity.html">Volunteer Activity</a> section, I share experiences in contributing to positive change through hands-on projects and events.
-        </p>
-        <p>
-            Learn about my efforts in providing emotional care and making meaningful contributions to communities in need. Read about specific projects and initiatives that reflect my dedication to social responsibility.
-        </p>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Skills and Expertise</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/core_skills.jpg" alt="Core Skills Image">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Explore my skills and expertise in software engineering. From web development to database management, I bring a diverse set of capabilities to the table. Check out my projects and see how I apply my skills to real-world challenges.
+                    </p>
+                    <p class="text-lg">
+                        Visit my <a href="skills.html" class="text-yellow-500">Skills page</a> for a detailed breakdown of the technologies and tools I work with.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Projest Pulse</h2>
-        <img src="images/pulse.jpg" alt="pulse">
-        <p>
-            Stay updated with my latest news and announcements. Whether it's a new project, collaboration, or an exciting development in the tech world, you'll find it here.
-        </p>
-        <ul>
-            <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">Exciting News on X Platform</a></li>
-            <li><a href="https://t.me/motiition" target="_blank">Join me on Telegram for Live Updates</a></li>
-        </ul>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Volunteer Activity and Contributions</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/volunteer.jpg" alt="Volunteer Activity Image">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Discover my commitment to making a positive impact beyond the world of software. In the <a href="volunteer_activity.html" class="text-yellow-500">Volunteer Activity</a> section, I share experiences in contributing to positive change through hands-on projects and events.
+                    </p>
+                    <p class="text-lg">
+                        Learn about my efforts in providing emotional care and making meaningful contributions to communities in need. Read about specific projects and initiatives that reflect my dedication to social responsibility.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <p>
-            Interested in collaborating or learning more about my work? Feel free to reach out! Visit the <a href="contact.html">Contact page</a> for direct contact information, my address, and social media links.
-        </p>
-        <p>
-            Whether you have a project in mind or just want to connect, I'm always open to new opportunities and collaborations.
-        </p>
-        <a href="contact.html">Contact Me</a>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Project Pulse</h2>
+            <div class="flex">
+                <div class="w-1/3">
+                    <figure>
+                        <img src="images/pulse.jpg" alt="Project Pulse Image">
+                    </figure>
+                </div>
+                <div class="w-2/3">
+                    <p class="text-lg">
+                        Stay updated with my latest news and announcements. Whether it's a new project, collaboration, or an exciting development in the tech world, you'll find it here.
+                    </p>
+                    <ul>
+                        <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank" class="text-yellow-500">Exciting News on X Platform</a></li>
+                        <li><a href="https://t.me/motiition" target="_blank" class="text-yellow-500">Join me on Telegram for Live Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <section class="section flex justify-end">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Get in Touch</h2>
+            <div class="flex">
+                <div class="w-full">
+                    <p class="text-lg">
+                        Interested in collaborating or learning more about my work? Feel free to reach out! Visit the <a href="contact.html" class="text-yellow-500">Contact page</a> for direct contact information, my address, and social media links.
+                    </p>
+                    <p class="text-lg">
+                        Whether you have a project in mind or just want to connect, I'm always open to new opportunities and collaborations.
+                    </p>
+                    <a href="contact.html" class="text-yellow-500">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content text-center">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>

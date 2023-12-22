@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet"  href="dist/output.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-bl from-blue-900 via-indigo-800 to-purple-600 text-white m-5">
     <header>
-        <h1>Main Heading</h1>
-        <img src="images/avatar.jpg" alt="Avatar Image">
-        <img src="images/se_skills.jpg" alt="Skills Image">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="relative inline-block text-left">
+            <a class="flex items-center" href="home.html">
+                <img class="w-7 h-7" src="images/avatar.jpg" alt="Avatar Image">
+            </a>
+            
+            <button id="burger" class="inline-flex justify-center items-center">
+                <!--burger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">About</a>
+                    <a href="skills.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Skills</a>
+                    <a href="volunteer_activity.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Volunteer Activity</a>
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="section1">
-        <h2>Applications</h2>
-        <img src="images/skills.jpg" alt="Skills Showcase Image">
-        <p>        
-            Welcome to my skills showcase! As a third-year software engineering student, I've cultivated a diverse set of skills to bring creative and efficient solutions to the table. Below, you'll find a snapshot of my expertise across various domains in the field. From web development to database management, programming proficiency, mobile app development, version control, Agile methodology, and cybersecurity measures, each skill reflects my commitment to excellence and innovation.
-        </p>
+    <section id="section1" class="section">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Applications</h2>
+            <figure class="mb-4">
+                <img src="images/skills.jpg" alt="Skills Showcase Image" class="w-full">
+            </figure>
+            <p class="text-lg">
+                Welcome to my skills showcase! As a third-year software engineering student, I've cultivated a diverse set of skills to bring creative and efficient solutions to the table. Below, you'll find a snapshot of my expertise across various domains in the field. From web development to database management, programming proficiency, mobile app development, version control, Agile methodology, and cybersecurity measures, each skill reflects my commitment to excellence and innovation.
+            </p>
+        </div>
     </section>
 
-    <section id="section2">
-        <h2>List of Skills</h2>
-        <table>
-            <tr>
-              <th>Applications I've Developed</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Web Development</td>
-              <td>Created responsive websites with HTML, CSS, and JavaScript. Developed dynamic web apps using React.js.</td>
-            </tr>
-            <tr>
-              <td>Database Management</td>
-              <td>Designed robust databases with SQL, ensuring efficient data storage and retrieval.</td>
-            </tr>
-            <tr>
-              <td>Programming Proficiency</td>
-              <td>Utilized Python and Java for versatile applications, focusing on automation and efficiency.</td>
-            </tr>
-            <tr>
-              <td>Mobile App Development</td>
-              <td>Crafted mobile apps for Android and iOS using React Native, integrating push notifications and offline capabilities.</td>
-            </tr>
-            <tr>
-              <td>Version Control</td>
-              <td>Managed collaborative projects with Git and GitHub, demonstrating expertise in branch management and conflict resolution.</td>
-            </tr>
-            <tr>
-              <td>Agile Methodology</td>
-              <td>Applied Agile principles in project development, contributing to effective sprint planning and progress reviews.</td>
-            </tr>
-            <tr>
-              <td>Cybersecurity Measures</td>
-              <td>Implemented security measures, including encryption and authentication, and conducted assessments for enhanced resilience.</td>
-            </tr>
-        </table>
+    <section id="section2" class="section">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">List of Skills</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border-collapse border border-gray-500">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border">Applications I've Developed</th>
+                            <th class="py-2 px-4 border">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border">Web Development</td>
+                            <td class="py-2 px-4 border">Created responsive websites with HTML, CSS, and JavaScript. Developed dynamic web apps using React.js.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Database Management</td>
+                            <td  class="py-2 px-4 border">Designed robust databases with SQL, ensuring efficient data storage and retrieval.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Programming Proficiency</td>
+                            <td  class="py-2 px-4 border">Utilized Python and Java for versatile applications, focusing on automation and efficiency.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Mobile App Development</td>
+                            <td  class="py-2 px-4 border">Crafted mobile apps for Android and iOS using React Native, integrating push notifications and offline capabilities.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Version Control</td>
+                            <td  class="py-2 px-4 border">Managed collaborative projects with Git and GitHub, demonstrating expertise in branch management and conflict resolution.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Agile Methodology</td>
+                            <td  class="py-2 px-4 border">Applied Agile principles in project development, contributing to effective sprint planning and progress reviews.</td>
+                        </tr>
+                        <tr>
+                            <td  class="py-2 px-4 border">Cybersecurity Measures</td>
+                            <td  class="py-2 px-4 border">Implemented security measures, including encryption and authentication, and conducted assessments for enhanced resilience.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="footer">
+        <div class="content text-center">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>

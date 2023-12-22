@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet"  href="dist/output.css">
 </head>
-<body>
+
+<body class="bg-gradient-to-bl from-blue-900 via-indigo-800 to-purple-600 text-white m-5">
     <header>
-        <h1>Moti Leggese</h1>
+        <div class="relative inline-block text-left">
+            <a class="flex items-center" href="home.html">
+                <img class="w-7 h-7" src="images/avatar.jpg" alt="Avatar Image">
+            </a>
+            
+            <button id="burger" class="inline-flex justify-center items-center">
+                <!--burger icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="origin-top-right absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <a href="home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">About</a>
+                    <a href="skills.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Skills</a>
+                    <a href="volunteer_activity.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Volunteer Activity</a>
+                    <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Contact Form</h2>
-        <form action="#" method="post">
-            <label for="fullName">Full Name:</label>
-            <input type="text" name="fullName" required>
-
-            <label for="address">Address:</label>
-            <textarea name="address" rows="3" required></textarea>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" name="phoneNumber" required>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" required>
-
-            <input type="submit" value="Submit">
-        </form>
+    <section class="section">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">Moti Leggese</h1>
+        </div>
     </section>
 
-    <section>
-        <h2>Direct Contact</h2>
-        <p>
-            Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and collaborations.
-        </p>
-        <address>
-            <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
-            <p>Phone: +251922426411</p>
-        </address>
+    <section class="section">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Contact Form</h2>
+            <form action="#" method="post">
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="fullName">Full Name:</label>
+                    <input class="border-2 border-gray-300 p-2 w-full" type="text" name="fullName" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="address">Address:</label>
+                    <textarea class="border-2 border-gray-300 p-2 w-full" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="phoneNumber">Phone Number:</label>
+                    <input class="border-2 border-gray-300 p-2 w-full" type="tel" name="phoneNumber" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="email">Email:</label>
+                    <input class="border-2 border-gray-300 p-2 w-full" type="email" name="email" required>
+                </div>
+
+                <div class="mb-4">
+                    <input class="bg-yellow-500 text-white p-2" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </section>
+
+    <section class="section">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold">Direct Contact</h2>
+            <p>
+                Feel free to reach out to me directly via email or phone. I'm always open to new opportunities and collaborations.
+            </p>
+            <address>
+                <p>Email: <a href="mailto:motileggese@gmail.com">motileggese@gmail.com</a></p>
+                <p>Phone: +251922426411</p>
+            </address>
+        </div>
+    </section>
+
+    <!-- Parent Div -->
+<div class="container mx-auto flex">
 
     <!-- Address Section -->
-    <section>
-        <h2>Address</h2>
+    <section class="section w-1/2">
+        <h2 class="text-2xl font-bold">Address</h2>
         <p>
             If you prefer traditional mail or want to drop by, here's my address:
         </p>
@@ -63,21 +98,41 @@
     </section>
 
     <!-- Social Media Section -->
-    <section>
-        <h2>Social Media</h2>
+    <section class="section w-1/2">
+        <h2 class="text-2xl font-bold">Social Media</h2>
         <p>
             Connect with me on social media for the latest updates and to stay in the loop:
         </p>
-        <ul>
-            <li><a href="https://t.me/motiition" target="_blank">Telegram</a></li>
-            <img src="images/telegram.jpg" alt="Telegram Logo">
-            <li><a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">X</a></li>
-            <img src="images/x.jpeg" alt="X Logo">
+        <ul class="flex justify-between">
+            <li class="inline-block">
+                <a href="https://t.me/motiition" target="_blank">
+                    <img src="images/telegram.jpg" alt="Telegram Logo" style="max-width: 50px; max-height: 50px;">
+                </a>
+            </li>
+            <li class="inline-block">
+                <a href="https://x.com/Moti24140143?t=_pUUa3pqlhg19NHuSnhmpA&s=35" target="_blank">
+                    <img src="images/x.jpeg" alt="X Logo" style="max-width: 50px; max-height: 50px;">
+                </a>
+            </li>
         </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+</div>
+
+
+    <footer class="footer">
+        <div class="content text-center">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
+
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
