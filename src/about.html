@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
+
+<body class="bg-primary text-white m-5">
     <header>
-        <h1>About Moti Leggese</h1>
-        <img src="images/avatar.jpg" alt="Moti Leggese Avatar">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="volunteer_activity.html">Volunteer Activity</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/avatar.jpg" alt="Avatar Image" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteer_activity.html">Volunteer Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section>
-        <h2>Introduction</h2>
-        <img src="images/intro.jpg" alt="Moti Leggese">
-        <p>
-            Hello! I'm Moti Leggese, a third-year software engineering student on a journey to explore the vast world of technology. Welcome to my digital space, where I share my enthusiasm for coding and problem-solving.
-        </p>
+    <section class="mt-5">
+        <div class="container">
+            <h1 class="display-4">About Moti Leggese</h1>
+        </div>
     </section>
 
-    <section>
-        <h2>Background</h2>
-        <p>
-            My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022.
-            </p>
-            <img src="images/my_photo.jpg" alt="Moti Leggese">
-            <p> These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
-        </p>
+    <section class="mt-5">
+        <div class="container">
+            <h2 class="h3">Introduction</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <img src="images/intro.jpg" alt="Moti Leggese" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hello! I'm Moti Leggese, a third-year software engineering student on a journey to explore the vast world of technology. Welcome to my digital space, where I share my enthusiasm for coding and problem-solving.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="mt-5">
+        <div class="container">
+            <h2 class="h3">Background</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <img src="images/my_photo.jpg" alt="Moti Leggese" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022. These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Moti Leggese</p>
+    <footer class="mt-5">
+        <p>© 2023 Moti Leggese</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
