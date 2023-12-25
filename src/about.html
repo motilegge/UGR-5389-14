@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body class="bg-primary text-white m-5">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-100">
             <a class="navbar-brand" href="home.html">
                 <img src="images/avatar.jpg" alt="Avatar Image" width="30" height="30">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" id="burger" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,9 +39,9 @@
         </nav>
     </header>
 
-    <section class="mt-5">
+    <section class="d-flex justify-content-end">
         <div class="container">
-            <h1 class="display-4">About Moti Leggese</h1>
+            <h1 class="text-center text-xl font-weight-bold">About Moti Leggese</h1>
         </div>
     </section>
 
@@ -51,41 +51,47 @@
             <div class="row">
                 <div class="col-md-4">
                     <figure>
-                        <img src="images/intro.jpg" alt="Moti Leggese" class="img-fluid">
+                        <img class="img-fluid" src="images/intro.jpg" alt="Moti Leggese">
                     </figure>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <p class="text-lg">
                         Hello! I'm Moti Leggese, a third-year software engineering student on a journey to explore the vast world of technology. Welcome to my digital space, where I share my enthusiasm for coding and problem-solving.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="mt-5">
         <div class="container">
             <h2 class="h3">Background</h2>
             <div class="row">
                 <div class="col-md-4">
                     <figure>
-                        <img src="images/my_photo.jpg" alt="Moti Leggese" class="img-fluid">
+                        <img class="img-fluid" src="images/my_photo.jpg" alt="Moti Leggese">
                     </figure>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022. These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
+                    <p class="text-lg">
+                        My educational journey took root in Lideta Catholic Cathedral School, where I spent 11 formative years progressing through elementary, middle, and high school. I successfully completed my high school education and graduated in 2022.
+                    </p>
+                    <p class="col-md-8">
+                        These years of academic exploration laid the foundation for my passion for learning and set the stage for my pursuit of a degree in software engineering.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="mt-5">
-        <p>© 2023 Moti Leggese</p>
+    <footer class="content text-center">
+        <div class="container py-4">
+            <p>&copy; 2023 Moti Leggese</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
